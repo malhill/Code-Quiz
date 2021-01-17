@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Computer Code Quiz</title>
+</head>
+
+<body>
+    <h1>Welcome!</h1>
+
+    <section>
+        Here is a quiz based on several definitions of computer code. You will have 10 questions for a total of 100
+        seconds. For each question answered incorrectly you will lose 10 seconds off of the total timer. Good luck!
+    </section>
+
+    <div id="quizBox">
+
+        <div id="timer"></div>
+
+        <div id="questionsBox">
+            <h1>Computer Code Quiz!</h1>
+            <button id="startQuiz" type="button" class="btn btn-success">Begin Quiz!</button>
+            <a class="btn btn-success" href="Highscores!.html" role="button" id="retake">See highscores!</a>
+            <ul id='options'></ul>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+<footer>
+    Malcolm the CodeNinja &#169;
+</footer>
+
+</html>
