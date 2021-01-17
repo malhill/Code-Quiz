@@ -5,7 +5,7 @@ A code ninjas journey to learning how to put it all together and making a functi
 Simple and effective. 
 * Create Id's and get them ready for Javascript.
 * Created two HTML's for the questions and the highscores. 
-* Set the links to each other <a> 
+* Set the links to each other 
 * Made sure text and buttons are in place
 * All links and scripts to CSS and JS are checked
 
@@ -20,3 +20,6 @@ A ton of console.log's and stress naps
 Saving the dressing for last. 
 * Initially seperating the Quiz and Highscores coding for organization
 * Refactoring the CSS for easy reading
+
+# ReadMe
+Github woul give me 404 errors and its because I added a 'a' code link by accident in the HTML. Hopefully this corrects the error.
