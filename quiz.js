@@ -3,7 +3,7 @@ console.log('do you see me?');
 var questions = [
     {
         title: '"Hello" is a type of ...',
-        choices: ["boolean", "alert", "number","string"],
+        choices: ["boolean", "alert", "number", "string"],
         answer: "string"
     },
     {
@@ -13,7 +13,7 @@ var questions = [
     },
     {
         title: "Which company developed JavaScript?",
-        choices: ["Mozilla", "Apple","Netscape", "Microsoft"],
+        choices: ["Mozilla", "Apple", "Netscape", "Microsoft"],
         answer: "Netscape"
     },
     {
@@ -55,10 +55,10 @@ startQuiz.addEventListener("click", function () {
             }
         }, 1000);
     }
-    render(questionArr);  
+    render(questionArr);
 });
 console.log(startQuiz);
- 
+
 function render(questionArr) {
     questionsBox.innerHTML = "";
     ulMaker.innerHTML = "";
@@ -84,23 +84,23 @@ function compare(event) {
 
         var createDiv = document.createElement("div");
         createDiv.setAttribute("id", "createDiv");
-         
+
         if (element.textContent == questions[questionArr].answer) {
             score++;
             createDiv.textContent = "Correct! " + questions[questionArr].answer;
-             
+
         } else {
-            
+
             startingTime = startingTime - error;
             createDiv.textContent = "Answer is-->  " + questions[questionArr].answer;
         }
-}
-console.log(startingTime);
-    
+    }
+    console.log(startingTime);
+
     questionArr++;
 
     if (questionArr >= questions.length) {
-        
+
         allDone();
         createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
     } else {
@@ -114,20 +114,20 @@ function allDone() {
     questionsBox.innerHTML = "";
     timer.innerHTML = "";
 
-    
+
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
     createH1.textContent = "All Done!"
 
     questionsBox.appendChild(createH1);
 
-    
+
     var createP = document.createElement("p");
     createP.setAttribute("id", "createP");
 
     questionsBox.appendChild(createP);
 
-    
+
     if (startingTime >= 0) {
         var timeRemaining = startingTime;
         var createP2 = document.createElement("p");
@@ -137,36 +137,32 @@ function allDone() {
         questionsBox.appendChild(createP2);
     }
 
-    
+    //Prepearing to create names for those taking the quiz!
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
-    createLabel.textContent = "Enter your initials: ";
+    createLabel.textContent = "Your Name ";
 
     questionsBox.appendChild(createLabel);
 
-    
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
-    createInput.setAttribute("id", "initials");
+    createInput.setAttribute("id", "Name");
     createInput.textContent = "";
 
     questionsBox.appendChild(createInput);
 
-    
-    var createSubmit = document.createElement("button");
-    createSubmit.setAttribute("type", "submit");
-    createSubmit.setAttribute("id", "Submit");
-    createSubmit.textContent = "Submit";
+    var createResults = document.createElement("button");
+    createResults.setAttribute("type", "results");
+    createResults.setAttribute("id", "results");
+    createResults.textContent = "Results";
 
-    questionsBox.appendChild(createSubmit);
+    questionsBox.appendChild(createResults);
 
-    
-    createSubmit.addEventListener("click", function () {
+    //This was tricky and I needed to do a lot of research here!
+    createResults.addEventListener("click", function () {
         var initials = createInput.value;
 
         if (initials === null) {
-
-            console.log("No value entered!");
 
         } else {
             var finalScore = {
@@ -183,8 +179,8 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-        
-            window.location.replace("./HighScores.html");
+
+            window.location.replace("./HighScores!.html");
         }
     });
 }

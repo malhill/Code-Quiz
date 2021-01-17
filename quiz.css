@@ -2,5 +2,19 @@
 /* body{
     background-color: red;
 } */
+/*quiz HTML*/
+h1,
+section,
+footer,
+#quizBox {
+    text-align: center;
+}
 
+section {
+    font-size: 50px;
+}
 
+/* Highscores HTML */
+#button-wrapper,{
+    text-align: center;
+}
