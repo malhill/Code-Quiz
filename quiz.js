@@ -37,7 +37,7 @@ var timer = document.querySelector("#timer");
 var questionsBox = document.querySelector('#questionsBox');
 var startQuiz = document.querySelector("#startQuiz");
 
-var startingTime = 60;
+var startingTime = 100;
 var secondsLeft = 0;
 var error = 20;
 var ulMaker = document.createElement('ul');
@@ -180,7 +180,7 @@ function allDone() {
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
 
-            window.location.replace("./HighScores!.html");
+            window.location.replace("highscores.html");
         }
     });
 }
