@@ -4,14 +4,16 @@
 } */
 /*quiz HTML*/
 h1,
-section,
+h3,
 footer,
 #quizBox {
     text-align: center;
 }
 
-section {
-    font-size: 50px;
+h3 {
+    font-size: 15px;
+    padding: 0 600px;
+    /* width: auto; */
 }
 
 
