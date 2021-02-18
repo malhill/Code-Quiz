@@ -1,10 +1,11 @@
 # <center>Javascript Quiz
 
-![Quiz Screenshot](./assets/codecapture.png)
-* [Git Hub Repository](https://github.com/malhill/Code-Quiz "Code Quiz Respository")
-* [Quiz App](https://malhill.github.io/Code-Quiz/ "Quiz App")
+![Quiz Screenshot](./assets/codecapture.PNG)
 
 A code ninjas journey to learning how to put it all together and making a functional app. Learning from several references, sites, and pages, I learned that the method being used for my work has to be consistent. Needed to find what worked for my mindset and stick to it, because the numerous approaches may not match with eachother! The following are notes on Code Quiz:
+
+* [Git Hub Repository](https://github.com/malhill/Code-Quiz "Code Quiz Respository")
+* [Quiz App](https://malhill.github.io/Code-Quiz/ "Quiz App")
 
 ### HTML
 Simple and effective. 
