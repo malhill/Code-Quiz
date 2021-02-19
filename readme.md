@@ -1,4 +1,4 @@
-# <center>Javascript Quiz</center>
+# <h1 align ="center">Javascript Quiz</center>
 
 ![Quiz Screenshot](./assets/codeCapture2.PNG)
 
